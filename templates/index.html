@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>News Bot</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="mt-5">Welcome to News Bot</h1>
+    <p class="lead">Enter a topic to fetch the top 10 news articles.</p>
+    <form action="/news" method="get">
+      <div class="form-group">
+        <input type="text" class="form-control" name="topic" placeholder="Enter a topic" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Get News</button>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>News Bot - {{ topic }}</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="mt-5">Top 10 News on "{{ topic }}"</h1>
+    <a href="/" class="btn btn-secondary mb-3">Search Again</a>
+    <ul class="list-group">
+      {% for article in articles %}
+      <li class="list-group-item">
+        <h5><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></h5>
+        <p>{{ article.description }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</body>
+
+</html>
